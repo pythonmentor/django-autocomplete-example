@@ -19,4 +19,5 @@ installé à l'aide de pip ou de pip3 selon votre système d'exploitation.
 3. Installer les dépendances avec `pipenv install`
 4. Activer l'environnement virtuel avec `pipenv shell`
 5. Exécuter les migrations avec `python manage.py migrate`
-6. Lancer le server de développement avec `python manage.py runserver`
+6. Charger les données de démo avec `python manage.py loaddata books.yml`
+7. Lancer le server de développement avec `python manage.py runserver`
