@@ -1,40 +1,30 @@
 - model: books.book
-  pk: 1
   fields:
     title: Learning Python
 - model: books.book
-  pk: 2
   fields:
     title: Programming Python
 - model: books.book
-  pk: 3
   fields:
     title: Apprendre à programmer en Python
 - model: books.book
-  pk: 4
   fields:
     title: Fluent Python
 - model: books.book
-  pk: 5
   fields:
     title: Git Essentials
 - model: books.book
-  pk: 6
   fields:
     title: Pro Git
 - model: books.book
-  pk: 7
   fields:
     title: Apprendre à versionner votre projet avec Git
 - model: books.book
-  pk: 8
   fields:
     title: Two Scoops of Django
 - model: books.book
-  pk: 9
   fields:
     title: Django Crash Course
 - model: books.book
-  pk: 10
   fields:
     title: Django 2 By Example
