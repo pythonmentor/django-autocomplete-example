@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Example | Home{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="book-input">Livre:</label>
+                <input type="text" id="book-input" class="form-control book-input">
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+        </form>
+    </div>
+{% endblock %}
+
+{% block scripts %}
+    <script>
+        const autocomplete_url = "{% url 'autocomplete:complete' %}";
+    </script>
+    {{ block.super }}
+    <script src="{% static 'js/autocomplete.js' %}"></script>
+{% endblock scripts %}
