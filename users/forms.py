@@ -1,16 +1,13 @@
-from django.contrib.auth.forms import (
-    UserCreationForm as AuthUserCreationForm,
-    UserChangeForm as AuthUserChangeForm,
-)
+from django.contrib.auth import auth_forms
 
 from .models import User
 
 
-class UserCreationForm(AuthUserCreationForm):
-    class Meta(AuthUserCreationForm.Meta):
+class UserCreationForm(auth_forms.UserCreationForm):
+    class Meta(auth_forms.UserCreationForm.Meta):
         model = User
 
 
-class UserChangeForm(AuthUserChangeForm):
-    class Meta(AuthUserChangeForm.Meta):
+class UserChangeForm(auth_forms.UserChangeForm):
+    class Meta(auth_forms.UserChangeForm.Meta):
         model = User
