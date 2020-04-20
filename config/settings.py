@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     # local applications
     "pages.apps.PagesConfig",
     "books.apps.BooksConfig",
-    "users.apps.UsersConfig",
     "autocomplete.apps.AutocompleteConfig",
 ]
 
