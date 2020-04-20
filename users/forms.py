@@ -1,4 +1,4 @@
-from django.contrib.auth import auth_forms
+from django.contrib.auth import forms as auth_forms
 
 from .models import User
 
