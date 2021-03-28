@@ -10,15 +10,17 @@
                 <label for="book-input">Livre:</label>
                 <input type="text" id="book-input" class="form-control book-input">
             </div>
-            <button type="submit" class="btn btn-primary">Envoyer</button>
+            <button id="submit-button" type="submit" class="btn btn-primary">Envoyer</button>
+            <button id="addinput-button" class="btn btn-primary">Ajouter</button>
         </form>
     </div>
 {% endblock %}
 
 {% block scripts %}
+    {{ block.super }}
     <script>
         const autocomplete_url = "{% url 'autocomplete:complete' %}";
     </script>
-    {{ block.super }}
     <script src="{% static 'js/autocomplete.js' %}"></script>
+    <script src="{% static 'js/addinput.js' %}"></script>
 {% endblock scripts %}
